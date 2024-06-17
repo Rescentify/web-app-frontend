@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Navigations from './Navigations';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,9 +21,7 @@ function Header() {
         <h1 className="font-philosopher text-3xl">Rescentify</h1>
       </Link>
       <nav className="flex gap-8">
-        <Link to="/">Beranda</Link>
-        <Link to="#">Katalog</Link>
-        <Link to="#">Tentang Kami</Link>
+        <Navigations />
       </nav>
     </header>
   );

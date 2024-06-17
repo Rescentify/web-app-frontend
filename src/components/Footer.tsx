@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo-landscape.png';
+import Navigations from './Navigations';
 
 function Footer() {
   return (
@@ -7,9 +8,7 @@ function Footer() {
       <div className="flex justify-between items-center">
         <img src={logo} alt="Rescentify Logo" className="w-60" />
         <nav className="flex gap-8 text-white">
-          <Link to="/">Beranda</Link>
-          <Link to="#">Katalog</Link>
-          <Link to="#">Tentang Kami</Link>
+          <Navigations />
         </nav>
       </div>
       <hr className="h-0.5 my-6 bg-primary border-0" />
