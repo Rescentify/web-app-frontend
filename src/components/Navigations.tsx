@@ -1,11 +1,17 @@
 import { NavLink } from 'react-router-dom';
 
+const links = [
+  { href: '/', name: 'Beranda' },
+  { href: '#', name: 'Katalog' },
+  { href: '#', name: 'Tentang Kami' }
+];
+
 function Navigation() {
   return (
     <>
-      <NavLink to="/">Beranda</NavLink>
-      <NavLink to="#">Katalog</NavLink>
-      <NavLink to="#">Tentang Kami</NavLink>
+      {links.map((link) => (
+        <NavLink to={link.href}>{link.name}</NavLink>
+      ))}
     </>
   );
 }
