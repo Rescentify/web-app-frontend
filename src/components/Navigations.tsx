@@ -11,6 +11,7 @@ function Navigations() {
     <>
       {links.map((link) => (
         <NavLink
+          key={link.name}
           to={link.href}
           className={({ isActive }) =>
             isActive
