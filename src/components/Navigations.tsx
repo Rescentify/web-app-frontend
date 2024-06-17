@@ -6,7 +6,7 @@ const links = [
   { href: '/about', name: 'Tentang Kami' }
 ];
 
-function Navigation() {
+function Navigations() {
   return (
     <>
       {links.map((link) => (
@@ -25,4 +25,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Navigations;
