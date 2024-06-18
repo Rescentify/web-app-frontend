@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full flex justify-between items-center px-14 transition-all duration-500 text-white border-b-1 ${
+      className={`z-50 fixed w-full flex justify-between items-center px-14 transition-all duration-500 text-white border-b-1 ${
         isScrolled
           ? 'bg-secondary bg-opacity-80 backdrop-blur-sm py-5'
           : 'bg-none py-4'
