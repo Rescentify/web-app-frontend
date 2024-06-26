@@ -8,7 +8,7 @@ export default {
         philosopher: ['Philosopher', 'sans-serif']
       },
       backgroundImage: {
-        hero: 'url("./src/assets/images/hero.jpg")'
+        hero: "url('./assets/images/hero.jpg')"
       },
       colors: {
         primary: '#BD946D',
